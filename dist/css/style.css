@@ -1,0 +1,22 @@
+:root {
+    --primary-color:  #50505a;
+    --secondary-color: #ff7e38;
+    --background-color: rgb(241, 239, 244);
+    --text-color: #4a4a54;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    font-family: "Montserrat", serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 10vw;
+    justify-content: center;
+}
+

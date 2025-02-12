@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/dishInfo.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat&family=Quicksand:wght@300..700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="nav-container">
+        <div id="logo">
+            <div>Malibu</div>
+            <span>SeaFood</span>
+        </div>
+        <nav>
+            <a>Home</a>
+            <a>Menu</a>
+            <a>Events</a>
+            <a>Contact</a>
+            <a>Reservation</a>
+        </nav>
+    </header>
+    <main id="container"></main>
+    <script id="dish-template" type="text/x-handlebars-template">
+        <div class="img-container">
+            <img class="dish-img" src="assets/images/{{image}}" alt="{{image}}">
+            <div class="progress-circle price">
+                <div id="price">{{price}}</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">{{name}}</div>
+            <div class="dish-type">{{type}}</div>
+            <div class="ingredients">
+                <div>ingredients:</div>
+                <hr>
+                <p>
+                    {{ingredients}}
+                </p>
+            </div>
+            <div class="nutritional-information">
+                <div>
+                    <div class="progress-circle">
+                        <div>
+                            <span>{{calories}}</span>
+                            <span>kcal</span>
+                        </div>
+                    </div>
+                    <span>Calories</span>
+                </div>
+                <div>
+                    <div class="progress-circle">
+                        <div>
+                            <span>{{carbo}}</span>
+                            <span>g</span>
+                        </div>
+                    </div>
+                    <span>Carbo</span>
+                </div>
+                <div>
+                    <div class="progress-circle">
+                        <div>
+                            <span>{{protein}}</span>
+                            <span>g</span>
+                        </div>
+                    </div>
+                    <span>Protein</span>
+                </div>
+                <div>
+                    <div class="progress-circle">
+                        <div>
+                            <span>{{fat}}</span>
+                            <span>g</span>
+                        </div>
+                    </div>
+                    <span>Fat</span>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="dish-number-template" type="text/x-handlebars-template">
+        <hr>
+        <span>{{id}}</span>
+        <span>/ {{total}}</span>
+        <span class="next">Next - </span>
+        <span class="next">{{nextDish}}</span>
+        </div>
+    </script>
+
+    <footer>
+        <div id="dish-number"></div>
+        <div class="icons-container">
+            <a href="https://www.facebook.com/" class="icon"><img src="assets/icons/facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/" class="icon"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+            <a href="https://www.x.com/" class="icon"><img src="assets/icons/x-twitter.svg" alt="x"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

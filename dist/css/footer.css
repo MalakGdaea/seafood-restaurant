@@ -1,0 +1,63 @@
+footer {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    justify-self: center;
+    margin-top: 15px;
+    position: fixed;
+    bottom: 20px;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 1rem;
+    height:1rem;
+}
+
+#dish-number {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+
+#dish-number hr {
+    width: 25px;
+    height: 5px;
+}
+
+#dish-number span {
+   font-weight: bold;
+   font-size: 13px;
+}
+
+#dish-number > span:first-of-type {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#dish-number > span:last-of-type {
+    color: var(--secondary-color);
+}
+
+.next {
+    cursor: pointer;
+}
