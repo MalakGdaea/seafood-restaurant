@@ -9,7 +9,7 @@ This small project doesn't use a database; instead, all the restaurant dish data
 1. run the command `git clone https://github.com/MalakGdaea/seafood-restaurant.git`
 2. cd seafood-restaurant
 2. run the command `npm start`
-3. the website will be available at `http://localhost:3000/` in your browser.
+3. the website will be available at `http://localhost:8080/` in your browser.
 
 ### UI
 I build the landing page based on the UI I saw on TikTok You can check out the video here: `https://vt.tiktok.com/ZSM8DevuF/`
