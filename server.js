@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use('/', routes);
 
 
-const port = 3000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
 });
